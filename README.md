@@ -64,3 +64,11 @@ Depois de instalar e configurar o Maven:
 mvn clean install
 ```
 Instala muitas coisas, no futuro ver se realmente eh necessário.
+
+
+##application.properties
+```
+(...)
+server.port=8081
+(...)
+```
