@@ -36,6 +36,9 @@ Gerar um token de acesso pessoal (PAT)
 - Dê um nome ao token, selecione o escopo desejado (pelo menos selecione os escopos repo e workflow).
 - Clique em Generate token e copie o token gerado. Atenção: você verá o token apenas uma vez, então copie-o e guarde-o em um lugar seguro.
 
+  ![image](https://github.com/user-attachments/assets/057d630c-e422-4e04-b14f-9c0432f5c26c)
+
+
 ```
 git remote set-url origin https://<TOKEN>@github.com/usuario/nome-do-repositorio.git
 ```
