@@ -3,6 +3,10 @@
 ## [CURSO DE SPRING para INICIANTES | Tutorial de Java Spring](https://www.youtube.com/watch?v=YY_hf0FOIcU&ab_channel=FernandaKipper%7CDev)
 
 ### Complementos:
+
+Iniciar:
+https://start.spring.io/
+
 Tem que incluir essa dependencia, senao nao roda no vscode
 
 ```
@@ -43,3 +47,14 @@ Gerar um token de acesso pessoal (PAT)
 git remote set-url origin https://<TOKEN>@github.com/usuario/nome-do-repositorio.git
 ```
 
+## Maven
+
+Precisei instalar o maven no WSL:
+```
+sudo apt update
+sudo apt install maven
+```
+Verificar a versao do Maven:
+```
+mvn -v
+```
