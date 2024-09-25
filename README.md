@@ -72,3 +72,10 @@ Instala muitas coisas, no futuro ver se realmente eh necessário.
 server.port=8081
 (...)
 ```
+
+## Post
+```
+curl -X POST http://localhost:8081/hello-world \
+-H "Content-Type: application/json" \
+-d '{"name":"Codorna", "email":"codorna@org.com"}'
+```

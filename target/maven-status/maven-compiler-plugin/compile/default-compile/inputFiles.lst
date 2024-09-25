@@ -1,2 +1,5 @@
 /home/wendel/first-spring-app/src/main/java/dev/wfrsilva/first_spring_app/FirstSpringAppApplication.java
+/home/wendel/first-spring-app/src/main/java/dev/wfrsilva/first_spring_app/configuration/HelloConfiguration.java
 /home/wendel/first-spring-app/src/main/java/dev/wfrsilva/first_spring_app/controller/HelloWorldController.java
+/home/wendel/first-spring-app/src/main/java/dev/wfrsilva/first_spring_app/domain/User.java
+/home/wendel/first-spring-app/src/main/java/dev/wfrsilva/first_spring_app/services/HelloWorldService.java

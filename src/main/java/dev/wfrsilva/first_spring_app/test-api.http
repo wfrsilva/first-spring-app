@@ -1,0 +1,7 @@
+POST http://localhost:8081/hello-world
+Content-Type: application/json
+
+{
+  "name":"Codorna",
+  "email":"codorna@org.com"
+}
