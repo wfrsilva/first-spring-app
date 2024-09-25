@@ -79,5 +79,60 @@ curl -X POST http://localhost:8081/hello-world \
 -H "Content-Type: application/json" \
 -d '{"name":"Codorna", "email":"codorna@org.com"}'
 ```
+WSL da erro
+
+```
+curl -X POST http://127.0.0.1:8081/hello-world \
+-H "Content-Type: application/json" \
+-d '{"name":"Codorna", "email":"codorna@org.com"}'
+```
+```
+curl -X POST http://10.0.0.113:8081/hello-world \
+-H "Content-Type: application/json" \
+-d '{"name":"Codorna", "email":"codorna@org.com"}'
+```
+
+```
+wendel@dev:~/first-spring-app$ curl -X POST http://localhost:8081/hello-world \
+-H "Content-Type: application/json" \
+-d '{"name":"Codorna", "email":"codorna@org.com"}'
+curl: (7) Failed to connect to localhost port 8081 after 1 ms: Couldn't connect to server
+
+
+wendel@dev:~/first-spring-app$ curl -X POST http://127.0.0.1:8081/hello-world \
+-H "Content-Type: application/json" \
+-d '{"name":"Codorna", "email":"codorna@org.com"}'
+curl: (7) Failed to connect to 127.0.0.1 port 8081 after 0 ms: Couldn't connect to server
+
+
+wendel@dev:~/first-spring-app$ curl -X POST http://10.0.0.113:8081/hello-world \
+-H "Content-Type: application/json" \
+-d '{"name":"Codorna", "email":"codorna@org.com"}'
+Hello Codorna Post codorna@org.com
+
+
+wendel@dev:~/first-spring-app$
+```
+
+
+
+
+Problemas para rodar o curl + post no WSL, uma solucao foi ao inves do localhost, colocar o ip da maquina (10.0.0.113)
+ 
+ 
+Configurar o Spring Boot para aceitar conexões de todas as interfaces, não apenas de localhost. Isso pode ser feito modificando o application.properties para escutar em todas as interfaces:
+
+application.properties
+
+```
+server.address=0.0.0.0
+```
+
+
+fonte:
+https://chatgpt.com/c/66f30847-318c-8012-a206-77809c1e4882
+
+
+
 VScode Rest client
 ![image](https://github.com/user-attachments/assets/c93a639f-d3ce-4955-8218-ec5872e08ef7)

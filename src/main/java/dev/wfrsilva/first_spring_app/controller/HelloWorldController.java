@@ -24,7 +24,7 @@ public class HelloWorldController {
 
     @PostMapping("")
     public String helloWorldPost(@RequestBody User body) {
-        return "Hello Codorna Post " + body.getName();
+        return "Hello Codorna Post " + body.getEmail();
     }// helloWorldPost
 
 }// HelloWorldController
