@@ -117,6 +117,8 @@ wendel@dev:~/first-spring-app$
 
 
 
+
+
 Problemas para rodar o curl + post no WSL, uma solucao foi ao inves do localhost, colocar o ip da maquina (10.0.0.113)
  
  

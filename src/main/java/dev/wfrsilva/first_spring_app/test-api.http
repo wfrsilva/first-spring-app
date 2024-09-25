@@ -1,4 +1,4 @@
-POST http://localhost:8081/hello-world/123
+POST http://localhost:8081/hello-world/123?filter=Filtro
 Content-Type: application/json
 
 {
