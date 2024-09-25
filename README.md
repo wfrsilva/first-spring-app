@@ -79,3 +79,5 @@ curl -X POST http://localhost:8081/hello-world \
 -H "Content-Type: application/json" \
 -d '{"name":"Codorna", "email":"codorna@org.com"}'
 ```
+VScode Rest client
+![image](https://github.com/user-attachments/assets/c93a639f-d3ce-4955-8218-ec5872e08ef7)
