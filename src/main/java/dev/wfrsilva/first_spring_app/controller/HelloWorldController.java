@@ -2,6 +2,7 @@ package dev.wfrsilva.first_spring_app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,9 +23,9 @@ public class HelloWorldController {
         return helloWorldService.helloWorld("Silva");
     }// String
 
-    @PostMapping("")
-    public String helloWorldPost(@RequestBody User body) {
-        return "Hello Codorna Post " + body.getEmail();
+    @PostMapping("/{id}")
+    public String helloWorldPost(@PathVariable("id") String id, @RequestBody User body) {
+        return "Hello Codorna Post " + body.getEmail() + " - id: " + id;
     }// helloWorldPost
 
 }// HelloWorldController

@@ -1,4 +1,4 @@
-POST http://localhost:8081/hello-world
+POST http://localhost:8081/hello-world/123
 Content-Type: application/json
 
 {
