@@ -142,7 +142,7 @@ VScode Rest client
 ![image](https://github.com/user-attachments/assets/dd94a6be-01f4-4dc8-8efa-17e719432dd2)
 
 test-api.http
-´´´
+```
 POST http://localhost:8081/hello-world/123?filter=Filtro
 Content-Type: application/json
 
@@ -150,7 +150,7 @@ Content-Type: application/json
   "name":"Codorna",
   "email":"codorna@org.com"
 }
-´´´
+```
 
 
 
